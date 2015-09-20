@@ -1,0 +1,6 @@
+app.controller('BuyCarsCtrl', ['$scope','Restangular', function($scope, Restangular) {
+  // Configuration setup for restangularjs
+  Restangular.setBaseUrl('/api');
+  Restangular.setRequestSuffix('.json');
+  $scope.title = "selva";
+ })
