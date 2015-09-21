@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" ng-app="arun" ng-controller="HomeClrt" >
+<html lang="en-US" ng-app="arun"  ng-controller="HomeClrt">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -7,6 +7,7 @@
     <link rel='stylesheet' id='calm-css'  href='/stylesheets/style-layout.css' type='text/css' media='all' />
 	  <link rel='stylesheet' id='calm-css'  href='/stylesheets/flexslider.css' type='text/css' media='all' />
     <link rel='stylesheet' id='animate-css'  href='/stylesheets/animate.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='animate-css'  href='/stylesheets/bootstrap.min.css' type='text/css' media='all' />
     <script type='text/javascript' src='/javascripts/jquery.js'></script>
     <script src="/javascripts/jquery.flexslider.js"></script>
 	  <script src="/javascripts/angular.js"></script>
@@ -16,7 +17,9 @@
     <script type='text/javascript' src="/javascripts/angular-route.js"></script>
     <script type='text/javascript' src="/javascripts/app.js"></script>
     <script type='text/javascript' src="/javascripts/appRoutes.js"></script>
+    <script src="/javascripts/ui.bootstrap.js"></script>
     <script type='text/javascript' src="/javascripts/angular/controllers/home_clrt.js"></script>
+    <script type='text/javascript' src="/javascripts/angular/controllers/aboutClrt.js"></script>
     <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
     <style type="text/css" media="screen">
       a, .page-content ul li a:hover, .page-content ol li a:hover, section.page-content .post.single .post-content ul.tags li a, section.page-content .page.single .post-content ul.tags li a, section.page-content .post .post-title h2 a:hover, section.page-content .page .post-title h2 a:hover, section.page-content .post .author span.name a:hover, section.page-content .page .author span.name a:hover, section.page-content aside.post-aside .comments-container ul.comment-list li .comment a.comment-reply-link, .posts-nav a:hover, .portfolio .port-filter ul.filter li:hover, .portfolio .portfolio-cont .item .img-container span.cats, aside.side-bar .widget ul li a:hover, #commentform input#submit, #commentform textarea#submit, .wpcf7-form input.wpcf7-submit, .wpcf7-form textarea.wpcf7-submit {
@@ -44,16 +47,16 @@
         <nav>
           <ul id="menu-main" class="main-nav animated flipInX delay1">
             <li id="menu-item-1740" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1740">
-              <a href="http://ksdesigning.com/themes/calm/">Home</a>
+              <a href="/about">Home</a>
             </li>
             <li id="menu-item-1741" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-25 current_page_item menu-item-1741">
-              <a href="http://ksdesigning.com/themes/calm/about/">About</a>
+              <a href="/home">About</a>
             </li>
             <li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13">
-              <a href="http://ksdesigning.com/themes/calm/portfolio/">Portfolio</a>
+              <a href="/about">Portfolio</a>
             </li>
             <li id="menu-item-1758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1758">
-              <a href="http://ksdesigning.com/themes/calm/contact/">Contact</a>
+              <a href="/about">Contact</a>
             </li>
           </ul>
         </nav>
@@ -65,7 +68,7 @@
           <flex-slider
               flex-slide="s in slideshows track by $index">
           		<li>
-          			<img ng-src="{{s}}" class="attachment-blog wp-post-image">
+          			<img ng-src="{{s}}" class="attachment-blog wp-post-image" style="height:300px">
           		</li>
           </flex-slider>
         </div>

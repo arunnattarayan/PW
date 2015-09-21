@@ -442,6 +442,10 @@ section.page-content .post .post-format i, section.page-content .page .post-form
 }
 section.page-content .post .post-thumb, section.page-content .page .post-thumb {
   width: 100%;
+
+}
+section.page-content .post .post-thumb .flexslider-container {
+  height :30%;
 }
 section.page-content .post .post-thumb img, section.page-content .page .post-thumb img {
   margin: auto;
@@ -1356,6 +1360,10 @@ table#wp-calendar td {
   header span.copy {
     display: none;
   }
+
+  section.page-content .cover-sliders {
+   display: none; !improtent
+ }
 }
 /* #Clearing
 ================================================== */
@@ -1377,3 +1385,8 @@ or wrap each row of columns in a <div class="row"> */
 .clearfix {
   zoom: 1;
 }
+
+
+/* slider image side
+cover-image
+*/

@@ -1,19 +1,22 @@
-angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 
     $routeProvider
 
         // home page
-        .when('/', {
+        .when('/home', {
             templateUrl: 'views/home.html',
             controller: 'HomeClrt'
         })
 
         // nerds page that will use the NerdController
         .when('/about', {
-            templateUrl: 'views/about.html',
-            controller: 'HomeClrt'
+            templateUrl: 'templates/about.ejs',
+            controller: 'aboutClrt'
         });
 
-    $locationProvider.html5Mode(true);
+        $locationProvider.html5Mode({
+          enabled: true,
+          requireBase: false
+        });
 
 }]);

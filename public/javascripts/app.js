@@ -1,3 +1,3 @@
 
 
-var app = angular.module('arun',['angular-flexslider'])
+var app = angular.module('arun',['ngRoute','angular-flexslider'])
